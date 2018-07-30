@@ -8,6 +8,7 @@ from __future__ import print_function
 
 import argparse
 import os
+import warnings
 import textwrap
 
 try:
@@ -15,7 +16,6 @@ try:
 except ImportError:
     import configparser
 
-import warnings
 from niftynet.engine.signal import TRAIN, INFER, EVAL
 from niftynet.utilities.util_common import look_up_operations
 from niftynet.engine.application_factory import ApplicationFactory
